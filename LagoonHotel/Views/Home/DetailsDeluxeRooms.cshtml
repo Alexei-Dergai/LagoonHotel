@@ -1,0 +1,141 @@
+﻿@{
+    ViewData["Title"] = "Details-Deluxe-Rooms";
+}
+
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagoona</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/normalize.css" />
+    <style type="text/css">
+        A {
+            color: #cc9933; /* Цвет ссылок */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <div class="header-bg">
+                <nav class="header-nav">
+                    <ul class="header-list list-reset">
+                        <li class="header-list-item">
+                            <a href="#aboutus" class="header-link link-transition"> О наших отелях</a>
+                        </li>
+                        <li class="header-list-item">
+                            <a href="#services" class="header-link link-transition"> Люксовые отели</a>
+                        </li>
+                    </ul>
+                    <div class="header-button-details">
+                        <a asp-controller="Home" asp-action="Index" class="btn btn-outline" style="margin-left: 100px;">Вернуться на главную</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h1 class="section-title section-title">Номера категории люкс</h1>
+    </div>
+    <section id="aboutus">
+        <div class="container">
+            <ul class="aboutus-descr">
+                <li>
+                    Роскошные люксовые номера не могут состоять из одной комнаты, как правило это более двух комнат с дизайнерским ремонтом - гостиная, спальная, может быть кухня и детская комната. Помимо шикарного номера в номере класса “Люкс” гости могут насладиться бонусами от отеля и высоким качеством сервиса. В стоимость проживания могут включены напитки и особенная пища, абонементы в спортивный клуб или бассейн, десерты, подарки от отеля и шоу-программа. В номерах “люкс” особенный вид из окна.
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class="specials">
+        <div class="special-items-1">
+            <article class="special-rooms-1">
+            </article>
+            <article class="special-rooms-2">
+            </article>
+        </div>
+        <div class="special-items-1">
+            <article class="special-rooms-3 item-right">
+            </article>
+        </div>
+        <div class="special-items-1">
+            <article class="special-rooms-4">
+            </article>
+            <article class="special-rooms-5">
+            </article>
+        </div>
+    </div>
+   
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title aboutus-title">
+                Позвольте себе отдохнуть с роскошью в люксовых номерах наших отелей!
+            </h2>
+            <ul class="aboutus-h">
+                <li>
+                    Lagoona de la guerra. <a asp-controller="Location" asp-action="HotelDetails3">Посмотреть номера.</a>
+                </li>
+            </ul>
+            <div class="specials">
+                <div class="special-items-1">
+                    <article class="special-rooms-6">
+                    </article>
+                </div>
+                <div class="special-items-1">
+                    <article class="special-rooms-7">
+                    </article>
+                </div>
+            </div>
+            <br><br />
+        </div>
+        
+        <div class="container">
+            <ul class="aboutus-h">
+                <li>
+                    Lagoona mentira monica. <a asp-controller="Location" asp-action="HotelDetails4">Посмотреть номера.</a>
+                </li>
+            </ul>
+            <div class="specials">
+                <div class="special-items-1">
+                    <article class="special-rooms-8">
+                    </article>
+                </div>
+                <div class="special-items-1">
+                    <article class="special-rooms-9">
+                    </article>
+                </div>
+            </div>
+            <br><br />
+        </div>
+        
+        <div class="container">
+            <ul class="aboutus-h">
+                <li>
+                    Lagoona mentira piadosa. <a asp-controller="Location" asp-action="HotelDetails7">Посмотреть номера.</a>
+                </li>
+            </ul>
+            <div class="specials">
+                <div class="special-items-1">
+                    <article class="special-rooms-10">
+                    </article>
+                </div>
+                <div class="special-items-1">
+                    <article class="special-rooms-11">
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <p class="aboutus-descr">
+            *Если вас заинтересовало данное спецпредложение, оставьте <a asp-controller="Feedback" asp-action="Create">заявку</a> на сайте и мы Вам перезвоним!
+        </p>
+    </div>
+</body>
+<body>
+
+</body>
+

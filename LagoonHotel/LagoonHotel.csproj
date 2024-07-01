@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.17" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.17" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.17" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.17">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="5.0.17" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LagoonHotel_DataAccess\LagoonHotel_DataAccess.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\img\DeluxeHotelRooms\" />
+    <Folder Include="wwwroot\img\HotelRooms\Hotel1\" />
+    <Folder Include="wwwroot\img\HotelRooms\Hotel2\" />
+    <Folder Include="wwwroot\img\HotelRooms\Hotel5\" />
+    <Folder Include="wwwroot\img\HotelRooms\Hotel6\" />
+    <Folder Include="wwwroot\img\HotelRooms\Hotel8\" />
+    <Folder Include="wwwroot\img\HotelRooms\Hotel9\" />
+    <Folder Include="wwwroot\img\Service\ExclusiveService\" />
+    <Folder Include="wwwroot\img\Service\Rest\" />
+    <Folder Include="wwwroot\img\Service\Rent\" />
+    <Folder Include="wwwroot\img\Service\Parking\" />
+  </ItemGroup>
+
+</Project>

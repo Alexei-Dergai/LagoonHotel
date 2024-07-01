@@ -1,0 +1,515 @@
+﻿@{
+    ViewData["Title"] = "Hotel";
+}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagoona</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/normalize.css" />
+    <style type="text/css">
+        A {
+            color: #cc9933; /* Цвет ссылок */
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <div class="header-bg">
+                <nav class="header-nav">
+                    <ul class="header-list list-reset">
+                        <li class="header-list-item">
+                            <a href="#aboutus" class="header-link link-transition"> О нас </a>
+                        </li>
+                        <li class="header-list-item">
+                            <a href="#services" class="header-link link-transition"> Услуги</a>
+                        </li>
+                        <li class="header-list-item">
+                            <a href="#benefits" class="header-link link-transition"> Преимущества </a>
+                        </li>
+                        <li class="header-list-item">
+                            <a href="#location" class="header-link link-transition"> Размещение </a>
+                        </li>
+                        <li class="header-list-item">
+                            <a href="#blog" class="header-link link-transition"> Блог </a>
+                        </li>
+                        <li class="header-list-item">
+                            <a href="#Contacts" class="header-link link-transition"> Контакты </a>
+                        </li>
+                    </ul>
+                    <div class="header-button-details" style="margin-left: 100px;">
+                        <a asp-controller="Feedback" asp-action="Create" class="btn call-back btn-reset">Обратный звонок</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section id="hero" class="hero">
+            <div class="container">
+                <h1 class="hidden">hotel</h1>
+                <h2 class="section-title services-title">
+                    Спецпредложения
+                </h2>
+                <div class="specials">
+                    <div class="special-items-1">
+                        <article class="special-1">
+                            <h3 class="cpesial-title">Мальдивские острова</h3>
+                            <p class="special-text">
+                                от 55 000
+                            </p>
+                            <a asp-action="DetailsMaldives" class="specials-link">
+                                Подробнее
+                            </a>
+                        </article>
+                        <article class="special-2">
+                            <h3 class="cpesial-title">Горящий тур на&nbsp;остров Крит</h3>
+                            <p class="special-text">
+                                от 30 000
+                            </p>
+                            <a asp-action="DetailsCrete" class="specials-link">
+                                Подробнее
+                            </a>
+                        </article>
+                    </div>
+                    <div class="special-items-1">
+                        <article class="special-3 item-right">
+                            <h3 class="cpesial-title3">Номера категории люкс</h3>
+                            <p class="special-text special-text-right">
+                                от 5 000
+                            </p>
+                            <a asp-action="DetailsDeluxeRooms" class="specials-link">
+                                Подробнее
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="aboutus" class="aboutus">
+            <div class="container">
+                <h2 class="section-title aboutus-title">
+                    О нас
+                </h2>
+                <p class="aboutus-descr">
+                    Идейные соображения высшего порядка, а&nbsp;также сложившаяся структура организации влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а&nbsp;также дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом сложившаяся структура организации требуют определения и&nbsp;уточнения существенных финансовых и&nbsp;административных условий.
+                </p>
+            </div>
+        </section>
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title services-title">
+                    Услуги
+                </h2>
+                <ul class="services-list list-reset flex">
+                    <li class="services-item services-item-1">
+                        <div class="blog-services">
+                            <div class="blog-services-text">
+                                <a asp-controller="Service" asp-action="ExclusiveServiceDetails" class="services-link services-link-1">
+                                    Эксклюзивное обслуживание
+                                </a>
+                                <p class="services-item-descr">
+                                    Равным образом постоянный количественный рост и&nbsp;сфера нашей активности
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="services-item services-item-2">
+                        <div class="blog-services">
+                            <div class="blog-services-text">
+                                <a asp-controller="Service" asp-action="RentDetails" class="services-link services-link-2">
+                                    Аренда банкетных залов
+                                </a>
+                                <p class="services-item-descr">
+                                    Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="services-item services-item-3">
+                        <div class="blog-services">
+                            <div class="blog-services-text">
+                                <a asp-controller="Service" asp-action="RestDetails" class="services-link services-link-3">
+                                    Сауны, бассейны, бани, фитнес-залы
+                                </a>
+                                <p class="services-item-descr">
+                                    Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию позиции
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="services-item services-item-4">
+                        <div class="blog-services">
+                            <div class="blog-services-text">
+                                <a asp-controller="Service" asp-action="ParkingDetails" class="services-link services-link-4">
+                                    Охраняемые автомобильные стоянки
+                                </a>
+                                <p class="services-item-descr">
+                                    Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию позиции
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="benefits" class="benefits">
+            <div class="container">
+                <h2 class="section-title benefits-title">
+                    Преимущества
+                </h2>
+                <ul class="benefits-list list-reset flex">
+                    <li class="benefits-list-item benefits-list-image benefits-list-image-1">
+                        <p class="benefits-text">
+                            Идейные соображения высшего порядка,а также постоянный количественный рост
+                        </p>
+                    </li>
+                    <li class="benefits-list-item benefits-list-image benefits-list-image-2">
+                        <p class="benefits-text">
+                            Значимость этих проблем настолько очевидна, что вопрос остаётся открытым
+                        </p>
+                    </li>
+                    <li class="benefits-list-item benefits-list-image benefits-list-image-3">
+                        <p class="benefits-text">
+                            Таким образом реализация плановых заданий играет важную роль для понимания
+                        </p>
+                    </li>
+                    <li class="benefits-list-item benefits-list-image benefits-list-image-4">
+                        <p class="benefits-text">
+                            Повседневная практика показывает, что сложившаяся структура организации
+                        </p>
+                    </li>
+                    <li class="benefits-list-item benefits-list-image benefits-list-image-5">
+                        <p class="benefits-text">
+                            Равным образом рамки и место обучения кадров способствует подготовки сотрудника
+                        </p>
+                    </li>
+                    <li class="benefits-list-item benefits-list-image benefits-list-image-6">
+                        <p class="benefits-text">
+                            Консультация с&nbsp;активом влечёт за&nbsp;собой процесс внедрения услуг нашего сервиса
+                        </p>
+                    </li>
+                    <li class="benefits-list-item benefits-list-image benefits-list-image-7">
+                        <p class="benefits-text">
+                            Повседневная практика показывает, что дальнейшее развитие различных
+                        </p>
+                    </li>
+                    <li class="benefits-list-item benefits-list-image benefits-list-image-8">
+                        <p class="benefits-text">
+                            Значимость этого настолько очевидна, что консультация наших экспертов помогает
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="location" class="location">
+            <div class="container">
+                <h2 class="section-title location-title">
+                    Размещение
+                </h2>
+                <ul class="location-list list-reset flex">
+                    <li class="location-items">
+                        <img src="img/23.jpg" alt="Lagoona española" class="location-item-image">
+
+                        <span class="from-location">
+                            от
+                        </span>
+                        <span class="price">
+                            4 698 ₽
+                        </span>
+                        <span class="night">
+                            / ночь
+                        </span>
+                        <span class="stars">
+                            <img src="img/Vector(5).svg" alt="Рейтинг отела 4 из 5">
+                            <img src="img/Vector(5).svg" alt="">
+                            <img src="img/Vector(5).svg" alt="">
+                            <img src="img/Vector(5).svg" alt="">
+                            <img src="img/Vector(6).svg" alt="">
+                        </span>
+                        <p class="location-text">
+                            Lagoona espa&ntilde;ola
+                        </p>
+                        <span class="from-location">
+                            Таиланд, Самуй
+                        </span>
+                        <a asp-controller="Location" asp-action="HotelDetails1" class="btn location-button flex">
+                            Номера
+                        </a>
+                    </li>
+                    <li class="location-items">
+                        <img src="img/24.jpg" alt="Lagoona son típicas" class="location-item-image">
+
+                        <span class="from-location">
+                            от
+                        </span>
+                        <span class="price">
+                            5 148 ₽
+                        </span>
+                        <span class="night">
+                            / ночь
+                        </span>
+                        <span class="stars">
+                            <img src="img/Vector(5).svg" alt="Рейтинг отела 4 из 5">
+                            <img src="img/Vector(5).svg" alt="">
+                            <img src="img/Vector(5).svg" alt="">
+                            <img src="img/Vector(5).svg" alt="">
+                            <img src="img/Vector(6).svg" alt="">
+                        </span>
+                        <p class="location-text">
+                            Lagoona son t&iacute;picas
+                        </p>
+                        <span class="from-location">
+                            Таиланд, Пхукет
+                        </span>
+                        <a asp-controller="Location" asp-action="HotelDetails2" class="btn location-button flex">
+                            Номера
+                        </a>
+                    </li>
+                    <li class="location-items">
+                        <img src="img/26.jpg" alt="Lagoona de la guerra" class="location-item-image">
+                        <span class="from-location">
+                            от
+                        </span>
+                        <span class="price">
+                            6 254 ₽
+                        </span>
+                        <span class="night">
+                            / ночь
+                        </span>
+                        <span class="stars">
+                            <img src="img/Vector(5).svg" alt="Рейтинг отела 5 из 5">
+                            <img src="img/Vector(5).svg" alt="">
+                            <img src="img/Vector(5).svg" alt="">
+                            <img src="img/Vector(5).svg" alt="">
+                            <img src="img/Vector(5).svg" alt="">
+                        </span>
+                        <p class="location-text">
+                            Lagoona de&nbsp;la&nbsp;guerra
+                        </p>
+                        <span class="from-location">
+                            Индонезия, Бали
+                        </span>
+                        <a asp-controller="Location" asp-action="HotelDetails3" class="btn location-button flex">
+                            Номера
+                        </a>
+                    </li>
+                    <li class="location-items">
+                        <img src="img/29-1.jpg" alt="Lagoona mentira piadosa" class="location-item-image">
+                        <span class="from-location">
+                            от
+                        </span>
+                        <span class="price">
+                            6 320 ₽
+                        </span>
+                        <span class="night">
+                            / ночь
+                        </span>
+                        <span class="stars">
+                            <img src="img/Vector(5).svg" alt="Рейтинг отела 5 из 5">
+                            <img src="img/Vector(5).svg" alt="">
+                            <img src="img/Vector(5).svg" alt="">
+                            <img src="img/Vector(5).svg" alt="">
+                            <img src="img/Vector(5).svg" alt="">
+                        </span>
+                        <p class="location-text">
+                            Lagoona mentira monica
+                        </p>
+                        <span class="from-location">
+                            Индонезия, Бали
+                        </span>
+                        <a asp-controller="Location" asp-action="HotelDetails4" class="btn location-button flex">
+                            Номера
+                        </a>
+                    </li>
+                    <li class="location-items">
+                        <img src="img/30.jpg" alt="Lagoona empujar la creatividad" class="location-item-image">
+                        <span class="from-location">
+                            от
+                        </span>
+                        <span class="price">
+                            6 457 ₽
+                        </span>
+                        <span class="night">
+                            / ночь
+                        </span>
+                        <span class="stars">
+                            <img src="img/Vector(5).svg" alt="Рейтинг отела 4 из 5">
+                            <img src="img/Vector(5).svg" alt="">
+                            <img src="img/Vector(5).svg" alt="">
+                            <img src="img/Vector(5).svg" alt="">
+                            <img src="img/Vector(6).svg" alt="">
+                        </span>
+                        <p class="location-text">
+                            Lagoona empujar la&nbsp;creatividad
+                        </p>
+                        <span class="from-location">
+                            Турция, Сиде
+                        </span>
+                        <a asp-controller="Location" asp-action="HotelDetails5" class="btn location-button flex">
+                            Номера
+                        </a>
+                    </li>
+                    <li class="location-items">
+                        <img src="img/31.jpg" alt="Lagoona el retorno" class="location-item-image">
+                        <span class="from-location">
+                            от
+                        </span>
+                        <span class="price">
+                            6 320 ₽
+                        </span>
+                        <span class="night">
+                            / ночь
+                        </span>
+                        <span class="stars">
+                            <img src="img/Vector(5).svg" alt="Рейтинг отела 4 из 5">
+                            <img src="img/Vector(5).svg" alt="">
+                            <img src="img/Vector(5).svg" alt="">
+                            <img src="img/Vector(5).svg" alt="">
+                            <img src="img/Vector(6).svg" alt="">
+                        </span>
+                        <p class="location-text">
+                            Lagoona el&nbsp;retorno
+                        </p>
+                        <span class="from-location">
+                            Монако, Монте-Карло
+                        </span>
+                        <a asp-controller="Location" asp-action="HotelDetails6" class="btn location-button flex">
+                            Номера
+                        </a>
+                    </li>
+                    <li class="location-items">
+                        <img src="img/32.jpg" alt="Lagoona mentira piadosa" class="location-item-image">
+                        <span class="from-location">
+                            от
+                        </span>
+                        <span class="price">
+                            6 505 ₽
+                        </span>
+                        <span class="night">
+                            / ночь
+                        </span>
+                        <span class="stars">
+                            <img src="img/Vector(5).svg" alt="Рейтинг отела 5 из 5">
+                            <img src="img/Vector(5).svg" alt="">
+                            <img src="img/Vector(5).svg" alt="">
+                            <img src="img/Vector(5).svg" alt="">
+                            <img src="img/Vector(5).svg" alt="">
+                        </span>
+                        <p class="location-text">
+                            Lagoona mentira piadosa
+                        </p>
+                        <span class="from-location">
+                            Вьетнам, Муйне
+                        </span>
+                        <a asp-controller="Location" asp-action="HotelDetails7" class="btn location-button flex">
+                            Номера
+                        </a>
+                    </li>
+                    <li class="location-items">
+                        <img src="img/33.jpg" alt="Lagoona suerte siguió siempre" class="location-item-image">
+                        <span class="from-location">
+                            от
+                        </span>
+                        <span class="price">
+                            6 824 ₽
+                        </span>
+                        <span class="night">
+                            / ночь
+                        </span>
+                        <span class="stars">
+                            <img src="img/Vector(5).svg" alt="Рейтинг отела 4 из 5">
+                            <img src="img/Vector(5).svg" alt="">
+                            <img src="img/Vector(5).svg" alt="">
+                            <img src="img/Vector(5).svg" alt="">
+                            <img src="img/Vector(6).svg" alt="">
+                        </span>
+                        <p class="location-text">
+                            Lagoona suerte sigui&oacute; siempre
+                        </p>
+                        <span class="from-location">
+                            Вьетнам, Нячанг
+                        </span>
+                        <a asp-controller="Location" asp-action="HotelDetails8" class="btn location-button flex">
+                            Номера
+                        </a>
+                    </li>
+                    <li class="location-items">
+                        <img src="img/g24.webp" alt="Lagoona suerte siguió siempre" class="location-item-image" style="height: 218px;">
+                        <span class="from-location">
+                            от
+                        </span>
+                        <span class="price">
+                            6 444 ₽
+                        </span>
+                        <span class="night">
+                            / ночь
+                        </span>
+                        <span class="stars">
+                            <img src="img/Vector(5).svg" alt="Рейтинг отела 4 из 5">
+                            <img src="img/Vector(5).svg" alt="">
+                            <img src="img/Vector(5).svg" alt="">
+                            <img src="img/Vector(5).svg" alt="">
+                            <img src="img/Vector(6).svg" alt="">
+                        </span>
+                        <p class="location-text">
+                            Lagoona de la bagama
+                        </p>
+                        <span class="from-location">
+                            Северная Америка, Багамы
+                        </span>
+                        <a asp-controller="Location" asp-action="HotelDetails9" class="btn location-button flex">
+                            Номера
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="Contacts" class="contacts">
+            <div class="container">
+                <h2 class="section-title contacts-title">
+                    Контакты
+                </h2>
+                <div class="contats-content">
+                    <div class="contacts-descr">
+                        <div class="row">
+                            <h3 class="contacts-child-title">Адрес</h3>
+                            <p class="contacts-child-descr">Москва, улица Юности,<br> дом 5&nbsp;строение&nbsp;4, офис&nbsp;2</p>
+                        </div>
+                        <div class="row">
+                            <h3 class="contacts-child-title">Телефоны</h3>
+                            <p class="phones-link">
+                                <a href="tel:+74995356434" class="contacts-child-descr link-transition">+7 499 535-64-34</a>
+                                <a href="tel:+74950050544" class="contacts-child-descr link-transition">+7 495 005-05-44</a>
+                            </p>
+                        </div>
+                        <div class="row">
+                            <h3 class="contacts-child-title">Email</h3>
+                            <div class="email-link">
+                                <a href="mailto:lg.oona@mail.ru" class="contacts-child-descr footer-links-mail link-transition">lg.oona@mail.ru</a>
+                                <span>по вопросам бронирования</span>
+                                <a href="mailto:hotels.ln@mail.ru" class="contacts-child-descr footer-links-mail link-transition">hotels.ln@mail.ru</a>
+                                <span>по вопросам сотрудничества</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h3 class="contacts-child-title">График</h3>
+                            <p class="contacts-child-descr">Понедельник-пятница, с&nbsp;10:00 до&nbsp;19:00</p>
+                        </div>
+                        <a class="btn-reset btn btn-contacts" href="https://yandex.by/maps/?ll=31.541413%2C54.309321&mode=routes&rtext=53.915581%2C27.577785~55.728545%2C37.813702&rtt=bc&ruri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg2NjY2ODg5OBJB0JHQtdC70LDRgNGD0YHRjCwg0JzRltC90YHQuiwg0KfRi9GA0LLQvtC90LDRjyDQstGD0LvRltGG0LAsIDE50JEiCg1Pn9xBFY6pV0I%2C~ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjY5MjM4MhI50KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINGD0LvQuNGG0LAg0K7QvdC-0YHRgtC4LCA10YE0IgoNOkEXQhUH6l5C&z=7.2">Построить маршрут</a>
+                    </div>
+                    <img src="img/Layer2.jpg" alt="Офис Лагуна" class="contact-img">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,2446 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+a {
+   color: inherit; 
+   text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    min-width: 320px;
+    font-family: 'font',sans-serif;
+    background: #E5E5E5;
+}
+
+@font-face {
+    font-family: Muller;
+    src: url(../fonts/MullerLight.woff),
+        url(../fonts/MullerLight.woff2),
+        url(../fonts/MullerBold.woff);
+        /* url(../fonts/MullerRegular.woff2),
+        url(../fonts/MullerMedium.woff),
+        url(../fonts/MullerMedium.woff2),
+        url(../fonts/MullerRegular.woff); */
+}
+
+:root {
+  --gray-color:#666666;
+  --main-color:#CC9933;
+  --yellow-color:#F0BF5F;
+  --yellow2-color:#A47312;
+}
+
+/* main */
+
+.flex{
+    display: flex;
+}
+
+  
+  .btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .container{
+    width: 1170px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.list-reset{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+  
+  .title-two {
+    margin: 0;
+    margin-bottom: 20px;
+    padding-left: 45px;
+  }
+  
+  /* header */
+  
+  .header {
+    padding: 30px 0 0 0;
+  }
+  
+  .header-block {
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .header-logo {
+    margin-right: 40px;
+  }
+  
+  .header-tel {
+    margin-right: auto;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--gray-color);
+  }
+  
+  .header-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--gray-color);
+  }
+  
+  .header-login {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--main-color);
+  }
+  
+  /* nav */
+  
+  .header-bg {
+    padding: 12px 45px 12px 45px;
+    align-items: center;
+    width: 1170px;
+    background: #FFFFFF;
+    border-radius: 15px;
+  }
+  
+  .header-list-item:not(last-child) {
+    margin-right: 45px;
+  }
+  
+  .header-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 56px 15px 0;
+    min-width: 743px;
+  }
+
+  .header-nav{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header-button{
+    display: flex;
+  }
+
+.header-button-details {
+    display: flex;
+    justify-content: flex-end;
+}
+  
+  .btn {
+    display: flex;
+    padding: 13px 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--main-color);
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    border-radius: 15px;
+    transition: background-color 0.3s ease-in-out,color 0.3s ease-in-out;
+  }
+
+  .btn:focus{
+    outline: none;
+    background-color:var(--main-color);
+    color:#FFFFFF;
+  }
+
+  .btn:hover{
+    background-color:var(--main-color);
+    color: #FFFFFF;
+  }
+
+  .btn:active{
+
+    background-color: var(--main-color);
+    color: #FFFFFF;
+  }
+  
+  .tour {
+    margin-right: 40px;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: flex-start;
+    gap: 10px;
+    min-width: 107px;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+  }
+  
+  .call-back {
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    box-sizing: border-box;
+    align-items: flex-start;
+    gap: 10px;
+    min-width: 177px;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+  }
+
+/* спецпредложения */
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.section-title{
+    margin: 0;
+    padding-top: 70px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: #333333;
+}
+
+.specials{
+    min-height: 600px;
+    display: flex;
+}
+
+.special-items-1{
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 24px) / 2);
+}
+
+.special-items-1:not(:last-child) {
+    margin-right: 24px;
+  }
+
+.special-1{
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%),url(../img/Rectangle\ 15.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-2{
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%),url(../img/Rectangle\ 16.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-3{
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(../img/Rectangle\ 17.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*Maldives*/
+
+.special-maldives-1 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Maldives/IMG_2052.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-maldives-2 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Maldives/IMG_2076.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-maldives-3 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Maldives/IMG_2102.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-maldives-4 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Maldives/IMG_2124.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-maldives-5 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Maldives/IMG_2132.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*Crete*/
+
+.special-crete-1 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Crete/IMG_2058.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-crete-2 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Crete/IMG_2078.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-crete-3 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Crete/IMG_2101.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-crete-4 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Crete/IMG_2124.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-crete-5 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Crete/IMG_2130.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-crete-dino-1 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Crete/IMG_20220917_154429.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-crete-dino-2 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Crete/2023-04-09.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-crete-waterpark-1 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Crete/panoramic-view.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-crete-waterpark-2 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Crete/72.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-crete-aqua-1 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Crete/thumb__750_0_0_0_crop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-crete-aqua-2 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Crete/1504880135.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-crete-food-1 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Crete/photo_2024-05-14_18-44-05.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-crete-food-2 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Crete/15022017152841970.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-crete-food-3 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Crete/photo_2024-05-14_18-45-11.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+/*Rooms*/
+
+.special-rooms-1 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/DeluxeRooms/IMG_2088.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-rooms-2 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/DeluxeRooms/IMG_2094.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-rooms-3 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/DeluxeRooms/IMG_2120.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-rooms-4 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/DeluxeRooms/IMG_2137.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-rooms-5 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/DeluxeRooms/IMG_2142.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-rooms-6 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/DeluxeRooms/g1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-rooms-7 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/DeluxeRooms/g2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-rooms-8 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/DeluxeRooms/g3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-rooms-9 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/DeluxeRooms/g4.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-rooms-10 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/DeluxeRooms/photo_2024-05-15_15-23-04.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-rooms-11 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/DeluxeRooms/photo_2024-05-15_15-23-08.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+/*Buffet*/
+
+.special-food-1 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Maldives/Fiyavalhu-Resort-Maldives-Mandhoo-Exterior.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-food-2 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Maldives/maldives-food-plan-innahura.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-food-3 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Maldives/shvedskij-stol-dusit-thaini-maldives.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*Snorkling*/
+
+.special-snorkling-1 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Maldives/Maldives-Entertainment-Kurumba-Snorkling.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-snorkling-2 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Maldives/Maldives-Snorkeling-Innahura-Photo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*Surfing*/
+
+.special-surfing-1 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Maldives/Maldives-Entertainment-FourSeasons-Kh-surfing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-surfing-2 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Maldives/surfing-in-maldives_Photo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*Fishing*/
+
+.special-fishing-1 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Maldives/5445c46062c57f98a613d5428b6ac27c.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-fishing-2 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Maldives/9717a61d4ac820d3f9fb978197d98bf8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*DeluxeHotelRooms*/
+
+.special-hotel-1 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/DeluxeHotelRooms/photo_1_2024-05-16_20-13-22.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-hotel-2 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/DeluxeHotelRooms/g7.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-hotel-3 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/DeluxeHotelRooms/g8.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-hotel-4 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/DeluxeHotelRooms/g9.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-hotel-5 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/DeluxeHotelRooms/g11.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-hotel-6 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/DeluxeHotelRooms/g12.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-hotel-7 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/DeluxeHotelRooms/g13.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-hotel-8 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/DeluxeHotelRooms/g14.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-hotel-9 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/DeluxeHotelRooms/g15.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-hotel-10 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/DeluxeHotelRooms/g16.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-hotel-11 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/DeluxeHotelRooms/g17.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-hotel-12 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/DeluxeHotelRooms/g18.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-hotel-13 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/DeluxeHotelRooms/g19.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-hotel-14 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/DeluxeHotelRooms/g20.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-hotel-15 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/DeluxeHotelRooms/g21.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-hotel-16 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/DeluxeHotelRooms/g22.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-hotel-17 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/DeluxeHotelRooms/g23.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.special-hotel-18 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/DeluxeHotelRooms/g18.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*HotelRooms*/
+
+.hotel1-room-1 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel1/g31.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotel1-room-2 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel1/g32.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotel1-room-3 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel1/g33.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotel1-room-4 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel1/g34.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotel1-room-5 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel1/g35.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotel1-room-6 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel1/g36.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.hotel2-room-1 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel2/g38.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotel2-room-2 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel2/g39.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hotel2-room-3 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel2/g40.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hotel2-room-4 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel2/g41.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hotel2-room-5 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel2/g42.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hotel2-room-6 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel2/g43.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotel5-room-1 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel5/g45.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotel5-room-2 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel5/g46.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotel5-room-3 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel5/g47.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotel5-room-4 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel5/g48.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotel5-room-5 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel5/g50.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotel5-room-6 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel5/g49.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotel6-room-1 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel6/g51.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotel6-room-2 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel6/g53.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotel6-room-3 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel6/g54.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotel6-room-4 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel6/g55.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotel6-room-5 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel6/g58.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotel6-room-6 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel6/g57.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotel8-room-1 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel8/g60.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotel8-room-2 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel8/g61.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotel8-room-3 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel8/g62.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotel8-room-4 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel8/g63.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotel8-room-5 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel8/g64.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotel8-room-6 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel8/g65.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.hotel9-room-1 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel9/g25.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotel9-room-2 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel9/g26.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotel9-room-3 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel9/g27.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotel9-room-4 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel9/g28.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotel9-room-5 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel9/g29.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotel9-room-6 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/HotelRooms/Hotel9/g30.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*ServicePhoto*/
+
+.service-parking-1 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Service/Parking/g66.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-parking-2 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Service/Parking/g67.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-rent-1 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Service/Rent/g68.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-rent-2 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Service/Rent/g69.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-rent-3 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Service/Rent/g70.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-rent-4 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Service/Rent/g71.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.service-rest-1 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Service/Rest/g72.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-rest-2 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Service/Rest/g73.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-rest-3 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Service/Rest/g74.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-rest-4 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Service/Rest/g75.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-rest-5 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Service/Rest/g77.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-rest-6 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Service/Rest/g78.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-rest-7 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Service/Rest/g79.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-rest-8 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Service/Rest/g71.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-rest-9 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Service/Rest/g80.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-rest-10 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Service/Rest/g81.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-rest-11 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Service/Rest/g82.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-rest-12 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Service/Rest/g83.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.service-exclusive-1 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Service/ExclusiveService/g84.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-exclusive-2 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Service/ExclusiveService/g90.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-exclusive-3 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Service/ExclusiveService/g85.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-exclusive-4 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Service/ExclusiveService/g86.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-exclusive-5 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Service/ExclusiveService/g87.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-exclusive-6 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Service/ExclusiveService/g88.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-exclusive-7 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Service/ExclusiveService/g89.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service-exclusive-8 {
+    flex: 1;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 40px 45px;
+    border-radius: 15px;
+    background-image: url(/img/Service/ExclusiveService/zavtrak.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.special-1:last-child {
+    margin-bottom: 0;
+  }
+
+.item-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .special-text{
+    margin: 0;
+    padding-bottom: 30px;
+    font-family: 'Muller';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+
+.cpesial-title{
+    width: 420px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+.specials-link{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--yellow-color);
+    background-image: url(../img/Rectangle\ 2.svg);
+    padding-right: 16px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    max-width: max-content;
+    transition: padding-right 0.3s ease-in-out,color 0.3s ease-in-out;
+}
+
+.specials-link:focus{
+  color:var(--yellow-color);
+  padding-right: 16px;
+}
+
+.specials-link:hover{
+  padding-right: 30px;
+}
+
+.specials-link:active{
+  padding-right: 16px;
+  color: #FFFFFF;;
+}
+
+.cpesial-title3{
+    width: 299px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+/* О нас */
+
+.aboutus-descr{
+    width: 888px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 200%;
+    color: #000000;
+}
+
+.aboutus-h {
+    width: 888px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 200%;
+    color: #000000;
+}
+
+/* Услуги */
+
+.services-link{
+    margin: 0;
+    padding-left: 45px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 200%;
+    color: var(--main-color);
+    background-image: url(../img/Rectangle\ 2.svg);
+    padding-right: 15px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    max-width: max-content;
+    transition: color 0.3s ease-in-out,padding-right 0.3s ease-in-out;
+}
+
+.services-link:focus{
+  padding-right: 15px;
+  color: var(--main-color);
+}
+
+.services-link:hover{
+  padding-right: 30px;
+  color: var(--yellow-color);
+}
+
+.services-link:active{
+  padding-right: 15px;
+  color: var(--yellow2-color);
+}
+
+.services-link svg{
+  color: var(--main-color);
+}
+
+.services-list{
+    flex-wrap: wrap;
+}
+
+.services-item{
+    margin-bottom: 24px;
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+
+.services-item:not(:nth-child(2n)){
+    margin-right: 24px;
+}
+
+.services-item-descr{
+    margin: 0;
+    padding-top: 13px;
+    padding-left: 45px;
+    margin-bottom: 35px;
+    width: 430px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 200%;
+    color: #000000;
+}
+
+.rectangle-services{
+    background-image: url(../img/Rectangle\ 2.svg);
+    padding-right: 16px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    max-width: max-content;
+}
+
+.services-item-1{
+    background-image: url(../img/10.png);
+    width: 573px;
+    background-repeat: no-repeat;
+}
+
+.services-item-2{
+    background-image: url(../img/11.png);
+    width: 573px;
+    background-repeat: no-repeat;
+}
+
+.services-item-3{
+    background-image: url(../img/12.png);
+    width: 573px;
+    background-repeat: no-repeat;
+}
+
+.services-item-4{
+    background-image: url(../img/13.png);
+    width: 573px;
+    background-repeat: no-repeat;
+}
+
+.blog-services{
+    display: flex;
+    padding-top: 191px;
+}
+
+.block-services-image{
+    height: 165px;
+    width: 573px;
+}
+
+.blog-services-text{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* benefits */
+
+.benefits-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.benefits-text{
+    display: flex;
+    width: 189px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 200%;
+    color: #000000;
+
+}
+
+.benefits-list-item{
+    padding: 116px 42px 32px 45px;
+    margin-bottom: 22px;
+    width: 276px;
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+
+.benefits-list-item:not(:nth-child(4n)){
+    margin-right: 22px;
+}
+
+.benefits-list-image{
+    background-repeat: no-repeat;
+    background-position: 45px 40px;
+}
+
+.benefits-list-image-1{
+    background-image: url(../img/bathtub.svg);
+}
+
+.benefits-list-image-2{
+    background-image: url(../img/hanger.svg);
+}
+
+.benefits-list-image-3{
+    background-image: url(../img/heating.svg);
+}
+
+.benefits-list-image-4{
+    background-image: url(../img/hotel-key.svg);
+}
+
+.benefits-list-image-5{
+    background-image: url(../img/parking.svg);
+}
+
+.benefits-list-image-6{
+    background-image: url(../img/reception.svg);
+}
+
+.benefits-list-image-7{
+    background-image: url(../img/security-box.svg);
+}
+
+.benefits-list-image-8{
+    background-image: url(../img/swimming-pool.svg);
+}
+
+/*location*/
+
+.location-list{
+    flex-wrap: wrap;
+    margin-bottom: 46px;
+}
+
+.location-items{
+    margin-bottom: 24px;
+    width: 374px;
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+
+.location-item-image{
+    width: 374px;
+    border-radius: 15px 15px 0px 0px;
+    margin-bottom: 36px;
+}
+
+.location-items:not(:nth-child(3n)){
+    margin-right: 24px;
+}
+
+.from-location{
+    padding-left: 45px;
+    width: 17px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #999999;
+    flex-grow: 0;
+}
+
+.night{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.price{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.location-text{
+    padding-left: 45px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.location-button{
+    margin: 20px 230px 45px 45px;
+    box-sizing: border-box;
+    padding: 13px 20px;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+}
+
+.location-link{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 200%;
+    color: #ffffff;
+    background-image: url(../img/Rectangle3.svg);
+    padding-right: 16px;
+    background-position: right center;
+    background-size: 11px;
+    background-repeat: no-repeat;
+    max-width: max-content;
+}
+
+.location-link::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+
+}
+
+.location-items-last{
+    padding: 374px 54px 27px 54px;
+    width: 374px;
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+
+.location-image{
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    background-image: url(../img/41.jpg);
+    background-repeat: no-repeat;
+    max-width: max-content;
+    width: 374px;
+    height: 440px;
+}
+
+.lo
+
+/* Хочу тур */
+
+.wanttour{
+    background: #E9E9E9;
+    border-radius: 15px; 
+    width: 1170px;
+    padding: 45px;
+}
+
+.form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 32px 28px;
+    width: 1080px;
+    font-family: Muller;
+    font-weight: 600;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.form-select{
+    border: none;
+    min-width: 160px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.form-input-date{
+    border: none;
+    width: 106px;
+}
+
+.form-input{
+    border: none;
+    width: 121px;
+}
+
+.form-descr{
+    margin-bottom: 15px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.form-top{
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin-right: 41px;
+  padding: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+opacity: 1;
+}
+
+.form-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 13px 30px;
+}
+
+.blog-title{
+    padding-top: 0;
+}
+
+/* Contacts */
+
+.contacts{
+  margin-bottom: 40px;
+}
+
+.contats-content {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 45px;
+  }
+  
+  .contacts-descr {
+    display: flex;
+    flex-direction: column;
+    margin-right: 52px;
+    border-bottom: 1px solid #DADADA;
+  }
+
+  .contacts-descr:not(:last-child) {
+    border-bottom: none;
+  }
+  
+  .contacts-child-title {
+    margin: 0;
+    min-width: 145px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  
+  .contacts-child-descr {
+    margin: 0;
+    font-family: Muller;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  
+  .phones-link {
+    margin: 0;
+    flex-direction: column;
+  }
+  
+  .email-link {
+    margin: 0;
+    flex-direction: column;
+  }
+  
+  .row {
+    display: flex;
+    border-bottom: 1px solid #E9E9E9;
+    padding: 25px 0 25px;
+  }
+  
+  .phones-link {
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--main-color);
+  }
+  
+  .email-link {
+    display: flex;
+    line-height: 150%;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .email-link a {
+    color: var(--main-color);
+  }
+  
+  .email-link span {
+    color: #999999;
+  }
+  
+  .btn-contacts {
+    margin-top: 45px;
+    padding: 27px 30px;
+    width: 213px;
+  }
+  
+  .contact-img {
+    min-height: 528px;
+  }
+
+  /* Footer */
+  
+  .footer{
+    min-width: 1170px;
+    margin-bottom: 30px;
+    background: #333333;
+    border-radius: 15px;
+    padding: 45px;
+    background-image: url(../img/Frame11.svg);
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    background-position-y: 100%;
+  }
+
+  .footer-items-descr{
+    margin: 0;
+    width: 302px;
+    font-family: Muller;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #FFFFFF;
+  }
+
+  .footer-items-descr-1{
+    margin-bottom: 37px;
+  }
+
+  .footer-items-descr-2{
+    margin-bottom: 40px;
+  }
+
+  .footer-items-descr-3{
+    width: 360px;
+    margin-bottom: 15px;
+  }
+
+  .footer-items-right{
+    margin-bottom: 15px;
+    width: 145px;
+  }
+
+  .footer-links-mail{
+    width: 130px;
+  }
+
+  .footer-list{
+    display: flex;
+  }
+  .footer-left{
+    display: flex;
+    flex-direction: column;
+    margin-right: 125px;
+    width: 302px;
+  }
+
+  .footer-right{
+    display: flex;
+    flex-direction: column;
+    margin-right: 269px;
+  }
+
+  .footer-link{
+    font-family: Muller;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color:var(--main-color);
+    width: 237px;
+  }
+
+  .footer-links{
+    display: flex;
+    font-family: Muller;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color:var(--main-color);
+  }
+
+  .networks-list{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .items-networks{
+    margin-bottom: 20px;
+  }
+
+  .social__link{
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .social__link svg {
+    fill:  #999999;
+    transition: fill 0.3s ease-in-out;
+  }
+
+  .social__link:focus svg{
+    fill: var(--main-color);
+  }
+
+  .social__link:hover svg{
+    fill: var(--main-color);
+  }
+
+  .social__link:active svg{
+    fill: var(--yellow2-color);
+  }
+
+  .link-transition{
+    transition: color 0.3s ease-in-out,border 0.3s ease-in-out;
+  }
+
+  .link-transition:focus{
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+  }
+
+  .link-transition:hover{
+    color: var(--yellow-color);
+  }
+
+  .link-transition:active{
+    color:var(--yellow2-color);
+    border: none;
+  }
+
+  .link-transition svg{
+    fill: var(--main-color);
+    transition: fill 0.3s ease-in-out;
+  }
+
+  .link-transition:focus svg{
+    fill: var(--main-color);
+  }
+
+  .link-transition:hover svg{
+    fill: var(--yellow-color);
+  }
+
+  .link-transition:active svg{
+    fill: var(--yellow2-color);
+  }
+
+
+

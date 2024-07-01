@@ -1,0 +1,48 @@
+﻿@model LagoonHotel_Models.Feedback
+
+@{
+    ViewData["Title"] = "Create-Feedback";
+}
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagoona</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/normalize.css" />
+    <link rel=" stylesheet" href="~/css/feedback.css" />
+</head>
+
+
+<body class="justify-content-xl-center">
+    <form class="obratnuj-zvonok" method="post" enctype="multipart/form-data">
+        <div class="form-zvonok">
+            <div>
+                <label asp-for="Name">Ваше имя :</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div>
+                <label asp-for="Telephone">Ваш телефон (с кодом) :</label>
+                <input type="text" maxlength="13" asp-for="Telephone" class="form-control" />
+                <span asp-validation-for="Telephone" class="text-danger"></span>
+            </div>
+            <div>
+                <label asp-for="Description">Ваш вопрос :</label>
+                <textarea asp-for="Description" class="form-control summernote"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="row">
+                <input type="submit" onclick="return validateInput()" class="btn btn-outline" value="Создать" />
+            </div>
+            <div class="row" style="display: flex; align-items: center; justify-content: center;">
+                <a asp-controller="Home" asp-action="Index" class="btn btn-outline">Назад</a>
+            </div>
+            
+        </div>
+    </form>
+</body>
+

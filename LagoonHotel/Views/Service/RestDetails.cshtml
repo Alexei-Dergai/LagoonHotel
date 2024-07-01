@@ -1,0 +1,149 @@
+﻿@{
+    ViewData["Title"] = "Details-Rest";
+}
+
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagoona</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/normalize.css" />
+    <style type="text/css">
+        A {
+            color: #cc9933; /* Цвет ссылок */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <div class="header-bg">
+                <nav class="header-nav">
+                    <ul class="header-list list-reset">
+                        <li class="header-list-item">
+                            <a href="#aboutus" class="header-link link-transition"> Бани</a>
+                        </li>
+                        <li class="header-list-item">
+                            <a href="#services" class="header-link link-transition"> Спа процедуры</a>
+                        </li>
+                        <li class="header-list-item">
+                            <a href="#benefits" class="header-link link-transition"> Спортзал</a>
+                        </li>
+                    </ul>
+                    <div class="header-button-details">
+                        <a asp-controller="Home" asp-action="Index" class="btn btn-outline" style="margin-left: 100px;">Вернуться на главную</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h1 class="section-title section-title">Сауны, бассейны, бани, фитнес-залы</h1>
+        <br><br />
+    </div>
+    <section id="aboutus">
+        <ul class="aboutus-descr">
+            <li>
+                Наши хаммамы. Здесь вы отдыхаете, расслабляетесь, избавляетесь от мысленной жвачки, чувствуете уют и облегчение. Силы приливают, кровь насыщается лейкоцитами, а иммунитет организма укрепляется. Даже после первого посещения вы почувствуете благотворный эффект турецкой парной. В хаммаме человек очищает организм, получает энергию.
+            </li>
+        </ul>
+        <div class="specials">
+            <div class="special-items-1">
+                <article class="service-rest-1">
+                </article>
+            </div>
+            <div class="special-items-1">
+                <article class="service-rest-2 item-right">
+                </article>
+            </div>
+        </div>
+        <div class="specials">
+            <div class="special-items-1">
+                <article class="service-rest-3">
+                </article>
+            </div>
+            <div class="special-items-1">
+                <article class="service-rest-4 item-right">
+                </article>
+            </div>
+        </div>
+        <br><br />
+    </section>
+    <section id="services">
+        <ul class="aboutus-descr">
+            <li>
+                Бассейн и зона джакузи - общая зона, место для отдыха в гармонии с природой и самим собой. Особую красоту залу с бассейном придают  большие панорамные окна, выходящие в зоны парков и открывающие виды на море. Поплавать, любуясь природой, находящейся на расстоянии вытянутой руки - такое можно позволить себе только в сети наших отелей!
+                <br><br />
+            </li>
+            <li>
+                Китайский спа-уход поможет Вам расслабиться и восстановить гармонию души и тела. Профессиональные массажисты сделают Вам массаж стоп, тела и другие процедуры, опираясь на традиции китайской медицины.
+            </li>
+        </ul>
+        <div class="specials">
+            <div class="special-items-1">
+                <article class="service-rest-5">
+                </article>
+            </div>
+            <div class="special-items-1">
+                <article class="service-rest-6 item-right">
+                </article>
+            </div>
+        </div>
+        <div class="specials">
+            <div class="special-items-1">
+                <article class="service-rest-7">
+                </article>
+            </div>
+            <div class="special-items-1">
+                <article class="service-rest-8 item-right">
+                </article>
+            </div>
+        </div>
+        <br><br />
+    </section>
+    <section id="benefits">
+        <ul class="aboutus-descr">
+            <li>
+                Сочетать интенсивный ритм работы с частыми командировками и отличную физическую форму?<br><br />
+            </li>
+            <li>
+                В фитнес-центре наших отелей это возможно! В наших тренажерных залах созданы идеальные условия для Вашего отдыха и активных занятий спортом.<br><br />
+            </li>
+            <li>
+                Оборудование зала включает обширную линейку свободных весов и тренажеров для занятий любого профиля, предназначенных как для поддержания отличной формы, так и развития физической силы и выносливости.<br><br />
+            </li>
+            <li>
+                После отличной тренировки в нашем фитнес-центре Вы зарядитесь энергией и хорошим настроением на весь день!
+            </li>
+        </ul>
+        <div class="specials">
+            <div class="special-items-1">
+                <article class="service-rest-9">
+                </article>
+            </div>
+            <div class="special-items-1">
+                <article class="service-rest-10 item-right">
+                </article>
+            </div>
+        </div>
+        <div class="specials">
+            <div class="special-items-1">
+                <article class="service-rest-11">
+                </article>
+            </div>
+            <div class="special-items-1">
+                <article class="service-rest-12 item-right">
+                </article>
+            </div>
+        </div>
+        <br><br />
+    </section>
+    <div class="container">
+        <p class="aboutus-descr">
+            *Если вас заинтересовало данное спецпредложение, оставьте <a asp-controller="Feedback" asp-action="Create">заявку</a> на сайте и мы Вам перезвоним!
+        </p>
+    </div>
+</body>

@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "Details-Hotel-2";
+}
+
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagoona</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/normalize.css" />
+    <style type="text/css">
+        A {
+            color: #cc9933; /* Цвет ссылок */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="section-title section-title">Пример номеров Lagoona de la guerra.</h1>
+    </div>
+    <div class="specials">
+        <div class="special-items-1">
+            <article class="hotel2-room-1">
+            </article>
+        </div>
+        <div class="special-items-1">
+            <article class="hotel2-room-2 item-right">
+            </article>
+        </div>
+    </div>
+    <div class="specials">
+        <div class="special-items-1">
+            <article class="hotel2-room-3">
+            </article>
+        </div>
+        <div class="special-items-1">
+            <article class="hotel2-room-4 item-right">
+            </article>
+        </div>
+    </div>
+    <div class="specials">
+        <div class="special-items-1">
+            <article class="hotel2-room-5">
+            </article>
+        </div>
+        <div class="special-items-1">
+            <article class="hotel2-room-6 item-right">
+            </article>
+        </div>
+    </div>
+
+    <div class="container">
+        <p class="aboutus-descr">
+            *Хотите узнать больше информации о номерах, оставьте <a asp-controller="Feedback" asp-action="Create">заявку</a> на сайте и мы Вам перезвоним!
+        </p>
+    </div>
+    <div class="row" style="display: flex; align-items: center; justify-content: center;">
+        <a asp-controller="Home" asp-action="Index" class="btn btn-outline">На главную</a>
+    </div>
+</body>
